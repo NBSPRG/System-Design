@@ -1,60 +1,10 @@
-# Algorithms & Data Structures
+# Indexing
+This repository gives you an enjoyable experience of learning the implementation part of indexing which is used in various places in computer science.
 
-This directory contains custom implementations of fundamental algorithms and data structures, focusing on performance optimization and real-world applications.
-
-## 📁 Contents
-
-### [hashmap/](hashmap/)
-**Custom HashMap Implementation**
-- Language: C++
-- Features: From-scratch implementation with collision handling
-- Key Learning: Understanding hash function design and collision resolution
-- Use Case: Foundation for building custom caching systems
-
-### [scheduling/](scheduling/)
-**Load Balancer Scheduling Algorithms**
-- Language: Python
-- Features: Multiple scheduling strategies (Round Robin, Weighted, etc.)
-- Key Learning: How load balancers distribute traffic efficiently
-- Use Case: Building scalable web applications
-
-### [indexing/](indexing/)
-**Database Indexing Implementations**
-- Language: C++
-- Features: Multiple indexing strategies (Simple, Multi-level, B-Tree, B+ Tree)
-- Key Learning: Understanding how databases optimize data retrieval
-- Use Case: Building efficient database systems and file storage
-
-## 🎯 Learning Objectives
-
-Each implementation focuses on:
-- **Algorithm complexity analysis**
-- **Memory optimization techniques**
-- **Performance benchmarking**
-- **Real-world applicability**
-- **Trade-offs and design decisions**
-
-## 🚀 Getting Started
-
-1. Choose an algorithm that interests you
-2. Review the implementation details
-3. Run performance benchmarks
-4. Experiment with different parameters
-
-## 🔧 Prerequisites
-
-- **C++ compiler** (for C++ implementations)
-- **Python 3.8+** (for Python implementations)
-- **Basic understanding** of data structures and algorithms
-
-## 📊 Performance Analysis
-
-Each algorithm includes:
-- Time complexity analysis
-- Space complexity evaluation
-- Benchmark results
-- Comparison with standard library implementations
-
----
-
-*These implementations provide deep insights into how fundamental algorithms work under the hood.*
+I have implemented various indexing here. These are :
+- **[Simple Indexing:](https://gitlab.com/NBSPRG/indexing-implementation/-/blob/main/1.simple_indexing.cpp)** This is based on the map data structure.
+- **[Two Level Indexing:](https://gitlab.com/NBSPRG/indexing-implementation/-/blob/main/2.two_level_indexing.cpp)** This is basically implemented with the nested map data structure. 
+- **[Multi-Level Indexing:](https://gitlab.com/NBSPRG/indexing-implementation/-/blob/main/3.multi_level_indexing.cpp)** This is the generalization of Two Level Indexing to the N-Level. 
+- **[BTree:](https://gitlab.com/NBSPRG/indexing-implementation/-/blob/main/4.btree.cpp)** This has been implemented in order to get the thorough understanding of how the indexing works in database and file system. It gives you knowledge about how B-Tree helps get limited access of blocks of disk with maximum keys in reasonable time.
+- **[B+ Tree:](https://gitlab.com/NBSPRG/indexing-implementation/-/blob/main/5.b+tree.cpp)** This is an advanced version of BTree which takes care of range query by adding a link between the leaf node which is only that stores data rather than BTree which stores data in both leaves and internal nodes.
+- **[Unordered_map:](https://gitlab.com/NBSPRG/indexing-implementation/-/blob/main/6.unordered_map_implementation.cpp)** This contains the implementation of hashmap data structure which is just in simple a list of linked list.
