@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  read_timeout: 10s
+  write_timeout: 10s
+
+circuit_breaker:
+  max_requests: 5
+  interval: 60s
+  timeout: 30s
+  failure_threshold: 10
+  success_threshold: 3
+  failure_rate_threshold: 0.6
+  minimum_requests: 5
+
+services:
+  market_data:
+    url: "http://localhost:8082"
+    timeout: 5s
+  
+  risk_management:
+    url: "http://localhost:8083"
+    timeout: 3s
+  
+  notification:
+    url: "http://localhost:8084"
+    timeout: 2s
+  
+  audit:
+    url: "http://localhost:8085"
+    timeout: 3s
+
+logging:
+  level: "info"
+  format: "json"
+
+metrics:
+  enabled: true
+  port: 9090
+  path: "/metrics"

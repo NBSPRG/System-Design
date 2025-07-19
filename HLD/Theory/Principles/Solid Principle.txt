@@ -1,0 +1,12 @@
+SOLID principle of System Design :
+
+i) S - Single Responsibility Principle :- A class should has only and only one reason to change, meaning that it has only one responsibility.
+
+ii) O - Open for Extension and close for Modification :- Class or Object should be open for extension meaning that it can add more functionality without disturbing the current functionality.
+
+iii) L - Liskov Substitution Principle :- B(Subset of class/interface A) if replaces the A, then it must not break the code. 
+
+iv) I - Interface Segregation Principle :- A client should never be forced to implement methods or class that it never uses, or should not be dependent on non-usable class/methods/interfaces.
+
+v) D - Dependency Inversion Principle :- Entities must depend on abstraction(abstract class) not on concretion(concrete classes).
+
