@@ -18,6 +18,13 @@ This directory contains custom implementations of fundamental algorithms and dat
 - Key Learning: How load balancers distribute traffic efficiently
 - Use Case: Building scalable web applications
 
+### [indexing/](indexing/)
+**Database Indexing Implementations**
+- Language: C++
+- Features: Multiple indexing strategies (Simple, Multi-level, B-Tree, B+ Tree)
+- Key Learning: Understanding how databases optimize data retrieval
+- Use Case: Building efficient database systems and file storage
+
 ## 🎯 Learning Objectives
 
 Each implementation focuses on:
